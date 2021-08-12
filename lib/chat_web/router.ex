@@ -19,7 +19,7 @@ defmodule ChatWeb.Router do
     get "/", PageController, :index
 
 
-    resources "/ChatRoom", RoomController, only: [:index]
+    resources "/Room", RoomController, only: [:index]
   end
 
   # Other scopes may use custom stacks.
