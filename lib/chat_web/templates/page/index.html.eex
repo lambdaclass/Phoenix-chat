@@ -8,11 +8,12 @@
         <h1>WELCOME TO ONLINE CHAT ROOM</h1>
     </body>
     
+    <img src="" alt="">
     <button id="redirect" style="color: brown;"> 
         entrar 
     </button>
     <script>
-         document.getElementById("redirect").addEventListener( "click", ev =>  window.location.replace("localhost:4000/Room" ))
+         document.getElementById("redirect").addEventListener( "click", ev =>  window.location.replace("/Room" ))
     </script>
 
 </html>
