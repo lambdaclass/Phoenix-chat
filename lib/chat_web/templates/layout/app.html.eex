@@ -10,13 +10,6 @@
   </head>
   <body>
     <header>
-      <section class="container">
-        <nav role="navigation">
-           <h1 style="padding-top: 15px">Chat Example</h1>
-        </nav>
-        <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>"
-           width="500px" alt="Phoenix Framework Logo" />
-        </section>
     </header>
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

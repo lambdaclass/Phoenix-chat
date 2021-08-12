@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html> 
+</button>
     <style>
         h1 {text-align: center;}
+        .button {
+                border: none;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 19em;
+            }
+
+        .button1 {background-color: #d31111; align-self: center;} 
     </style>
 
-    <body style="background: rgb(84, 84, 94);">
-        <h1>WELCOME TO ONLINE CHAT ROOM</h1>
+    <body  style="background: rgb(84, 84, 94); border: rgb(1, 1, 2);">
+        <h1> <b>WELCOME TO ONLINE CHAT ROOM </b></h1>
     </body>
     
-    <img src="" alt="">
-    <button id="redirect" style="color: brown;"> 
-        entrar 
+    <button class="button button1" id="redirect" style="color: rgb(0, 0, 0);"> 
+        enter 
     </button>
+    <img    style="border: 15px solid; color: black;" src="<%= Routes.static_path(@conn, "/images/warEleph.jpg")  %>" alt="">
+   
     <script>
          document.getElementById("redirect").addEventListener( "click", ev =>  window.location.replace("/Room" ))
     </script>
