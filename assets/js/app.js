@@ -20,7 +20,11 @@ let channel = socket.channel('room:lobby', {}); // connect to chat "room"
 channel.on('shout', function (payload) { // listen to the 'shout' event
   let li = document.createElement("li"); // create new list item DOM element
   let name = payload.name || 'guest';    // get name from payload or set default
-  li.innerHTML = '<b>' + name + '</b>: ' + payload.message; // set li contents
+  // let hoy = new Date();
+  // let hora = hoy.getHours().toString(10);
+  // let minutos = hoy.getMinutes().toString(10);
+  // let segundos = hoy.getSeconds().toString(10);
+  li.innerHTML =  '<b>'+ name + '</b>: ' + payload.message; // set li contents
   ul.appendChild(li);                    // append to list
 });
 
