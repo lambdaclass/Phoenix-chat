@@ -1,1 +1,18 @@
-<h1>WELCOME TO THE CHAT ROOM</h1>
+<!DOCTYPE html>
+<html>
+    <style>
+        h1 {text-align: center;}
+    </style>
+
+    <body style="background: rgb(84, 84, 94);">
+        <h1>WELCOME TO ONLINE CHAT ROOM</h1>
+    </body>
+    
+    <button id="redirect" style="color: brown;"> 
+        entrar 
+    </button>
+    <script>
+         document.getElementById("redirect").addEventListener( "click", ev =>  window.location.replace("localhost:4000/Room" ))
+    </script>
+
+</html>
